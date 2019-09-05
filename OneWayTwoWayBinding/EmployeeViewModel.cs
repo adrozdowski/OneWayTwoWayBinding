@@ -1027,7 +1027,7 @@ namespace OneWayTwoWayBinding
                     }
                 }
 
-                if (destinationList != null)
+                if (destinationList != null) //Darek
                 {
                     var objects2Insert = new List<object>();
 
