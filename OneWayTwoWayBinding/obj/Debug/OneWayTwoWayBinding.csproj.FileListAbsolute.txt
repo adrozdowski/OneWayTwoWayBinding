@@ -1,0 +1,95 @@
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csprojResolveAssemblyReference.cache
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.g.cs
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.g.cs
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.cache
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.lref
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe.config
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.pdb
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.baml
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.g.resources
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.Properties.Resources.resources
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.GenerateResource.cache
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CoreCompileInputs.cache
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.exe
+C:\VS2017Projekty\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe.config
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csprojAssemblyReference.cache
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.g.cs
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.g.cs
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.cache
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.lref
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.baml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.g.resources
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.Properties.Resources.resources
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.GenerateResource.cache
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CoreCompileInputs.cache
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.exe
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe.config
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.pdb
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.g.cs
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.g.cs
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.cache
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.lref
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.baml
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.g.resources
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.Properties.Resources.resources
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.GenerateResource.cache
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CoreCompileInputs.cache
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.exe
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.pdb
+C:\OneDrive\OneDrive - X-KOM Sp. z o.o\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csprojAssemblyReference.cache
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe.config
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.exe
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\OneWayTwoWayBinding.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.g.cs
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.g.cs
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.cache
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding_MarkupCompile.lref
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MainWindow.baml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.g.resources
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.Properties.Resources.resources
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.GenerateResource.cache
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CoreCompileInputs.cache
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.exe
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CopyComplete
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\CommonServiceLocator.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.baml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.dll
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.pdb
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.xml
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csprojAssemblyReference.cache
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\CommonServiceLocator.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\System.Windows.Interactivity.dll
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.xml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.pdb
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.xml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.baml
+D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CopyComplete

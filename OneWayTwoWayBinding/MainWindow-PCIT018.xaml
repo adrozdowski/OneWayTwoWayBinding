@@ -1,0 +1,131 @@
+﻿<Window x:Class="OneWayTwoWayBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OneWayTwoWayBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:ConverterStringFiltering x:Key="ConverterStringFiltering" />
+        <local:ConverterButton x:Key="ConverterButton" />
+        <local:ConverterIntFiltering x:Key="ConverterIntFiltering" />
+    </Window.Resources>
+    <Grid Margin="0,0,0,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListView Name="EmployeeListView" HorizontalAlignment="Left" Height="160" Margin="0,259,0,0" VerticalAlignment="Top" Width="792" ItemsSource="{Binding FilteredCollection}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedIndex="{Binding ChangedPathBinding}" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="EmployeeName" Width="150" DisplayMemberBinding="{Binding EmployeeName}" />
+                    <GridViewColumn Header="EmployeeID" Width="150" DisplayMemberBinding="{Binding EmployeeID}" />
+                    <GridViewColumn Header="EmployeeSalary" Width="150" DisplayMemberBinding="{Binding EmployeeSalary}" />
+                    <GridViewColumn Header="EmployeeDesigner" Width="150" DisplayMemberBinding="{Binding EmployeeDesigner}" />
+                    <GridViewColumn Header="EmployeeEmailID" Width="150" DisplayMemberBinding="{Binding EmployeeEmailID}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Employee Name" HorizontalAlignment="Left" Margin="0,52,0,0" VerticalAlignment="Top" Width="151" Height="23"/>
+
+        <TextBox Name ="TextboxEmployeeName" HorizontalAlignment="Left" Height="23" Margin="165,52,0,0" VerticalAlignment="Top" Width="522" >
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource ConverterStringFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" >
+                    
+                    <Binding Path="SelectedEmployee.EmployeeName" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                    <Binding Path="DynamicSearchEmployeeName"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Label Content="EmplyeeID" HorizontalAlignment="Left" Margin="0,91,0,0" VerticalAlignment="Top" Width="145" Height="23"/>
+
+        <TextBox Name ="TextboxEmployeeID" HorizontalAlignment="Left" Height="23" Margin="165,91,0,0"  VerticalAlignment="Top" Width="522" >
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource ConverterIntFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <MultiBinding.ValidationRules>
+                        <local:OnlyIntOrNullRule/>
+                        <local:RequiredValuesToAddRule/>
+                    </MultiBinding.ValidationRules>
+                    <Binding Path="SelectedEmployee.EmployeeID" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                    <Binding Path="DynamicSearchEmployeeID"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+
+        <Label Content="EmpoyeeSalary" HorizontalAlignment="Left" Margin="0,131,0,0" VerticalAlignment="Top" Width="151" Height="23"/>
+
+        <TextBox Name="TextboxEmployeeSalary" HorizontalAlignment="Left" Height="23" Margin="165,131,0,0" VerticalAlignment="Top" Width="522" >
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource ConverterIntFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <MultiBinding.ValidationRules>
+                        <local:OnlyIntOrNullRule/>
+                    </MultiBinding.ValidationRules>
+                    <Binding Path="SelectedEmployee.EmployeeSalary" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" />
+                    <Binding Path="DynamicSearchEmployeeSalary"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Label Content="EmployeeDesigner" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Width="151" Height="23"/>
+
+        <TextBox Name ="TextboxEmployeeDesigner" HorizontalAlignment="Left" Height="23" Margin="165,176,0,0" VerticalAlignment="Top" Width="522" >
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource ConverterStringFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding Path="SelectedEmployee.EmployeeDesigner" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" />
+                    <Binding Path="DynamicSearchEmployeeDesigner"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Label Content="EmployeeEmailID" HorizontalAlignment="Left" Margin="0,221,0,0" VerticalAlignment="Top" Width="151" Height="23"/>
+        <TextBox Name="TextboxEmployeeEmailID" HorizontalAlignment="Left" Height="23" Margin="165,221,0,0" VerticalAlignment="Top" Width="522" >
+
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource ConverterStringFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding Path="SelectedEmployee.EmployeeEmailID" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" />
+                    <Binding Path="DynamicSearchEmployeeEmailID"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Button Content="Update" HorizontalAlignment="Left" Margin="692,76,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding UpdateCommand}" >
+            <Button.CommandParameter>
+                <MultiBinding Converter="{StaticResource ConverterButton}" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding ElementName="TextboxEmployeeName" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeID" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeSalary" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeDesigner" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeEmailID" Path="Text"/>
+                </MultiBinding>
+            </Button.CommandParameter>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="15,10,0,0" TextWrapping="Wrap" Text="{Binding ModeOfExecuting, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Top" Width="390" Height="37" FontSize="20"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="692,116,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding ClearCommand}" >
+            <Button.CommandParameter>
+                <MultiBinding Converter="{StaticResource ConverterButton}" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding ElementName="TextboxEmployeeName" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeID" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeSalary" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeDesigner" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeEmailID" Path="Text"/>
+                </MultiBinding>
+            </Button.CommandParameter>
+        </Button>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="692,161,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding AddCommand}" >
+            <Button.CommandParameter>
+                <MultiBinding Converter="{StaticResource ConverterButton}" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                    <Binding ElementName="TextboxEmployeeName" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeID" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeSalary" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeDesigner" Path="Text"/>
+                    <Binding ElementName="TextboxEmployeeEmailID" Path="Text"/>
+                </MultiBinding>
+            </Button.CommandParameter>
+        </Button>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="692,206,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding RemoveCommand}" />
+    </Grid>
+</Window>
