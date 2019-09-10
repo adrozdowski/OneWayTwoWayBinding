@@ -365,7 +365,8 @@ namespace OneWayTwoWayBinding
 
         public void ClickMethod(object parameter)
         {
-            List<Employee> selection = ((IList)parameter).Cast<Employee>().ToList();
+            //List<Employee> selection = ((IList)parameter).Cast<Employee>().ToList();
+            IList selection = (IList)parameter;
 
             if (Keyboard.IsKeyDown(Key.LeftCtrl))
             {
@@ -422,8 +423,9 @@ namespace OneWayTwoWayBinding
                 {
                     //IndexesOfSelectedEmployees.Add(Employees.IndexOf(SelectedEmployee));
                     //SelectedEmployee.IsSelected = false;
-                    SelectedEmployee = null;
-                    CountOfSelectedEmployees = 0;
+                    //SelectedEmployee = null;
+                    selection.Clear();
+                    CountOfSelectedEmployees = selection.Count; //0
                     IndexesOfSelectedEmployees.Clear();
                     DynamicSearchEmployeeName = String.Empty;
                     DynamicSearchEmployeeID = String.Empty;
@@ -436,7 +438,7 @@ namespace OneWayTwoWayBinding
                 {
                     IndexesOfSelectedEmployees.Clear();
                     IndexesOfSelectedEmployees.Add(SelectedIndex.GetValueOrDefault());
-                    CountOfSelectedEmployees = 1; 
+                    CountOfSelectedEmployees = selection.Count; //1
                 }
                 else if (IndexesOfSelectedEmployees.Count != 1)
                 {
@@ -1027,7 +1029,7 @@ namespace OneWayTwoWayBinding
                     }
                 }
 
-                if (destinationList != null) //Darek
+                if (destinationList != null) 
                 {
                     var objects2Insert = new List<object>();
 

@@ -12,12 +12,15 @@ using System.Windows.Media;
 
 namespace OneWayTwoWayBinding
 {
-    public class ListViewSelection : Behavior<ListView>
+    public static class SelectorBehavior
     {
+        #region bool ShouldSelectItemOnMouseUp
+
         public static readonly DependencyProperty ShouldSelectItemOnMouseUpProperty =
-      DependencyProperty.RegisterAttached(
-          "ShouldSelectItemOnMouseUp", typeof(bool), typeof(SelectorBehavior),
-          new PropertyMetadata(default(bool), HandleShouldSelectItemOnMouseUpChange));
+            DependencyProperty.RegisterAttached(
+                "ShouldSelectItemOnMouseUp", typeof(bool), typeof(SelectorBehavior),
+                new PropertyMetadata(default(bool), HandleShouldSelectItemOnMouseUpChange));
+
         public static void SetShouldSelectItemOnMouseUp(DependencyObject element, bool value)
         {
             element.SetValue(ShouldSelectItemOnMouseUpProperty, value);
@@ -66,5 +69,8 @@ namespace OneWayTwoWayBinding
         {
             e.Handled = e.ChangedButton == MouseButton.Left;
         }
+        #endregion
+
     }
+
 }

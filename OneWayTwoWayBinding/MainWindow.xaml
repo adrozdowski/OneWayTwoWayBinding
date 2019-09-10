@@ -68,16 +68,14 @@ Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ListView Name="EmployeeListView" HorizontalAlignment="Left" Height="160" Margin="0,153,0,0" VerticalAlignment="Top" Width="755" Grid.Row="1" SelectedIndex="{Binding SelectedIndex}" ItemsSource="{Binding FilteredCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  IsSynchronizedWithCurrentItem="True" SelectionMode="Extended" AllowDrop="True"
+        <ListView Name="EmployeeListView" HorizontalAlignment="Left" Height="160" Margin="0,153,0,0" VerticalAlignment="Top" Width="755" Grid.Row="1" SelectedIndex="{Binding SelectedIndex}" ItemsSource="{Binding FilteredCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  IsSynchronizedWithCurrentItem="True" SelectionMode="Extended" AllowDrop="True" local:ListViewBehaviour.AutoUnselectItem="True"
             dd:DragDrop.IsDragSource="true"
             dd:DragDrop.IsDropTarget="true"
             dd:DragDrop.ShowAlwaysDropTargetAdorner="true"
             dd:DragDrop.UseDefaultDragAdorner="true"
             dd:DragDrop.SelectDroppedItems="True"
             dd:DragDrop.DropHandler="{Binding}"
-            dd:DragDrop.DragDropCopyKeyState ="AltKey"
-            
-         >
+            dd:DragDrop.DragDropCopyKeyState ="AltKey" >
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding EmployeeName}"  Width="150">

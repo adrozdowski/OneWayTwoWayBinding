@@ -10,49 +10,22 @@
             </summary>
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.StartDrag(GongSolutions.Wpf.DragDrop.IDragInfo)">
-            <summary>
-            Queries whether a drag can be started.
-            </summary>
-            <param name="dragInfo">Information about the drag.</param>
-            <remarks>
-            To allow a drag to be started, the <see cref="P:GongSolutions.Wpf.DragDrop.DragInfo.Effects" /> property on <paramref name="dragInfo" />
-            should be set to a value other than <see cref="F:System.Windows.DragDropEffects.None" />.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.CanStartDrag(GongSolutions.Wpf.DragDrop.IDragInfo)">
-            <summary>
-            Determines whether this instance [can start drag] the specified drag information.
-            </summary>
-            <param name="dragInfo">The drag information.</param>
-            <returns></returns>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.Dropped(GongSolutions.Wpf.DragDrop.IDropInfo)">
-            <summary>
-            Notifies the drag handler that a drop has occurred.
-            </summary>
-            <param name="dropInfo">Information about the drop.</param>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.DragDropOperationFinished(System.Windows.DragDropEffects,GongSolutions.Wpf.DragDrop.IDragInfo)">
-            <summary>
-            Notifies the drag handler that a drag and drop operation has finished.
-            </summary>
-            <param name="operationResult">The operation result.</param>
-            <param name="dragInfo">The drag information.</param>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.DragCancelled">
-            <summary>
-            Notifies the drag handler that a drag has been aborted.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDragHandler.TryCatchOccurredException(System.Exception)">
-            <summary>
-            Notifies that an exception has occurred upon dragging.
-            </summary>
-            <param name="exception">The exception that occurrred.</param>
-            <returns>
-            Boolean indicating whether the exception is handled in the drag handler.
-            False will rethrow the exception.
-            </returns>
+            <inheritdoc />
         </member>
         <member name="T:GongSolutions.Wpf.DragDrop.DefaultDropHandler">
             <summary>
@@ -83,21 +56,10 @@
             <param name="dropInfo">The DropInfo with a valid DragInfo.</param>
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDropHandler.DragOver(GongSolutions.Wpf.DragDrop.IDropInfo)">
-            <summary>
-            Updates the current drag state.
-            </summary>
-            <param name="dropInfo">Information about the drag.</param>
-            <remarks>
-            To allow a drop at the current drag position, the <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.Effects" /> property on
-            <paramref name="dropInfo" /> should be set to a value other than <see cref="F:System.Windows.DragDropEffects.None" />
-            and <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.Data" /> should be set to a non-null value.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DefaultDropHandler.Drop(GongSolutions.Wpf.DragDrop.IDropInfo)">
-            <summary>
-            Performs a drop.
-            </summary>
-            <param name="dropInfo">Information about the drop.</param>
+            <inheritdoc />
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.DragDrop.TryGetDragHandler(GongSolutions.Wpf.DragDrop.DragInfo,System.Windows.UIElement)">
             <summary>
@@ -708,121 +670,55 @@
             </param>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.DataFormat">
-            <summary>
-            Gets or sets the data format which will be used for the drag and drop actions.
-            </summary>
-            <value>The data format.</value>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.Data">
-            <summary>
-            Gets or sets the drag data.
-            </summary>
-            
-            <remarks>
-            This must be set by a drag handler in order for a drag to start.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.DragStartPosition">
-            <summary>
-            Gets the position of the click that initiated the drag, relative to <see cref="P:GongSolutions.Wpf.DragDrop.DragInfo.VisualSource"/>.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.PositionInDraggedItem">
-            <summary>
-            Gets the point where the cursor was relative to the item being dragged when the drag was started.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.Effects">
-            <summary>
-            Gets or sets the allowed effects for the drag.
-            </summary>
-            
-            <remarks>
-            This must be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/> by a drag handler in order 
-            for a drag to start.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.MouseButton">
-            <summary>
-            Gets the mouse button that initiated the drag.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.SourceCollection">
-            <summary>
-            Gets the collection that the source ItemsControl is bound to.
-            </summary>
-            
-            <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be null.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.SourceIndex">
-            <summary>
-            Gets the position from where the item was dragged.
-            </summary>
-            <value>The index of the source.</value>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.SourceItem">
-            <summary>
-            Gets the object that a dragged item is bound to.
-            </summary>
-            
-            <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be null.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.SourceItems">
-            <summary>
-            Gets a collection of objects that the selected items in an ItemsControl are bound to.
-            </summary>
-            
-            <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be empty.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.SourceGroup">
-            <summary>
-            Gets the group from a dragged item if the drag is currently from an ItemsControl with groups.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.VisualSource">
-            <summary>
-            Gets the control that initiated the drag.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.VisualSourceItem">
-            <summary>
-            Gets the item in an ItemsControl that started the drag.
-            </summary>
-            
-            <remarks>
-            If the control that initiated the drag is an ItemsControl, this property will hold the item
-            container of the clicked item. For example, if <see cref="P:GongSolutions.Wpf.DragDrop.DragInfo.VisualSource"/> is a ListBox this
-            will hold a ListBoxItem.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.VisualSourceFlowDirection">
-            <summary>
-            Gets the FlowDirection of the current drag source.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.DataObject">
-            <summary>
-            Gets the <see cref="T:System.Windows.IDataObject"/> which is used by the drag and drop operation. Set it to
-            a custom instance if custom drag and drop behavior is needed.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.DragDropHandler">
-            <summary>Initiates a drag-and-drop operation.</summary>
-            <param name="dragSource">A reference to the dependency object that is the source of the data being dragged.</param>
-            <param name="data">A data object that contains the data being dragged.</param>
-            <param name="allowedEffects">One of the <see cref="T:System.Windows.DragDropEffects" /> values that specifies permitted effects of the drag-and-drop operation.</param>
-            <returns>One of the <see cref="T:System.Windows.DragDropEffects" /> values that specifies the final effect that was performed during the drag-and-drop operation.</returns>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DragInfo.DragDropCopyKeyState">
-            <summary>
-            Gets the drag drop copy key state indicating the effect of the drag drop operation.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="T:GongSolutions.Wpf.DragDrop.DropInfo">
             <summary>
@@ -857,89 +753,34 @@
             </param>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.Data">
-            <summary>
-            Gets the drag data.
-            </summary>
-            
-            <remarks>
-            If the drag came from within the framework, this will hold:
-            
-            - The dragged data if a single item was dragged.
-            - A typed IEnumerable if multiple items were dragged.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.DragInfo">
-            <summary>
-            Gets a <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.DragInfo"/> object holding information about the source of the drag, 
-            if the drag came from within the framework.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.DropPosition">
-            <summary>
-            Gets the mouse position relative to the VisualTarget
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.DropTargetAdorner">
-            <summary>
-            Gets or sets the class of drop target to display.
-            </summary>
-            
-            <remarks>
-            The standard drop target adorner classes are held in the <see cref="T:GongSolutions.Wpf.DragDrop.DropTargetAdorners"/>
-            class.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.Effects">
-            <summary>
-            Gets or sets the allowed effects for the drop.
-            </summary>
-            
-            <remarks>
-            This must be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/> by a drop handler in order 
-            for a drop to be possible.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.InsertIndex">
-            <summary>
-            Gets the current insert position within <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetCollection"/>.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.UnfilteredInsertIndex">
-            <summary>
-            Gets the current insert position within the source (unfiltered) <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetCollection"/>.
-            </summary>
-            <remarks>
-            This should be only used in a Drop action.
-            This works only correct with different objects (string, int, etc won't work correct).
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetCollection">
-            <summary>
-            Gets the collection that the target ItemsControl is bound to.
-            </summary>
-            
-            <remarks>
-            If the current drop target is unbound or not an ItemsControl, this will be null.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetItem">
-            <summary>
-            Gets the object that the current drop target is bound to.
-            </summary>
-            
-            <remarks>
-            If the current drop target is unbound or not an ItemsControl, this will be null.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetGroup">
-            <summary>
-            Gets the current group target.
-            </summary>
-            
-            <remarks>
-            If the drag is currently over an ItemsControl with groups, describes the group that
-            the drag is currently over.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.TargetScrollViewer">
             <summary>
@@ -952,58 +793,37 @@
             </summary>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.VisualTarget">
-            <summary>
-            Gets the control that is the current drop target.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.VisualTargetItem">
-            <summary>
-            Gets the item in an ItemsControl that is the current drop target.
-            </summary>
-            
-            <remarks>
-            If the current drop target is unbound or not an ItemsControl, this will be null.
-            </remarks>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.VisualTargetOrientation">
-            <summary>
-            Gets the orientation of the current drop target.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.VisualTargetFlowDirection">
-            <summary>
-            Gets the orientation of the current drop target.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.DestinationText">
-            <summary>
-            Gets and sets the text displayed in the DropDropEffects adorner.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.EffectText">
-            <summary>
-            Gets and sets the effect text displayed in the DropDropEffects adorner.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.InsertPosition">
-            <summary>
-            Gets the relative position the item will be inserted to compared to the TargetItem
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.KeyStates">
-            <summary>
-            Gets a flag enumeration indicating the current state of the SHIFT, CTRL, and ALT keys, as well as the state of the mouse buttons.
-            </summary>
+            <inheritdoc />
+        </member>
+        <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.NotHandled">
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.IsSameDragDropContextAsSource">
-            <summary>
-            Gets a value indicating whether the target is in the same context as the source, <see cref="F:GongSolutions.Wpf.DragDrop.DragDrop.DragDropContextProperty" />.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropInfo.EventType">
-            <summary>
-            Gets the current mode of the underlying routed event.
-            </summary>
+            <inheritdoc />
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.DropTargetAdorner.Pen">
             <summary>
@@ -1090,7 +910,6 @@
             <summary>
             Gets or sets the drag data.
             </summary>
-            
             <remarks>
             This must be set by a drag handler in order for a drag to start.
             </remarks>
@@ -1109,7 +928,6 @@
             <summary>
             Gets or sets the allowed effects for the drag.
             </summary>
-            
             <remarks>
             This must be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/> by a drag handler in order 
             for a drag to start.
@@ -1124,9 +942,8 @@
             <summary>
             Gets the collection that the source ItemsControl is bound to.
             </summary>
-            
             <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be null.
+            If the control that initiated the drag is unbound or not an ItemsControl, this will be null.
             </remarks>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDragInfo.SourceIndex">
@@ -1138,18 +955,16 @@
             <summary>
             Gets the object that a dragged item is bound to.
             </summary>
-            
             <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be null.
+            If the control that initiated the drag is unbound or not an ItemsControl, this will be null.
             </remarks>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDragInfo.SourceItems">
             <summary>
             Gets a collection of objects that the selected items in an ItemsControl are bound to.
             </summary>
-            
             <remarks>
-            If the control that initated the drag is unbound or not an ItemsControl, this will be empty.
+            If the control that initiated the drag is unbound or not an ItemsControl, this will be empty.
             </remarks>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDragInfo.SourceGroup">
@@ -1166,7 +981,6 @@
             <summary>
             Gets the item in an ItemsControl that started the drag.
             </summary>
-            
             <remarks>
             If the control that initiated the drag is an ItemsControl, this property will hold the item
             container of the clicked item. For example, if <see cref="P:GongSolutions.Wpf.DragDrop.IDragInfo.VisualSource"/> is a ListBox this
@@ -1205,32 +1019,33 @@
             <summary>
             Queries whether a drag can be started.
             </summary>
-            
-            <param name="dragInfo">
-            Information about the drag.
-            </param>
-            
+            <param name="dragInfo">Object which contains several drag information.</param>
             <remarks>
-            To allow a drag to be started, the <see cref="P:GongSolutions.Wpf.DragDrop.DragInfo.Effects"/> property on <paramref name="dragInfo"/> 
-            should be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/>. 
+            To allow a drag to be started, the <see cref="P:GongSolutions.Wpf.DragDrop.DragInfo.Effects" /> property on <paramref name="dragInfo" />
+            should be set to a value other than <see cref="F:System.Windows.DragDropEffects.None" />.
             </remarks>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:GongSolutions.Wpf.DragDrop.IDragSource.CanStartDrag(GongSolutions.Wpf.DragDrop.IDragInfo)" -->
+        <member name="M:GongSolutions.Wpf.DragDrop.IDragSource.CanStartDrag(GongSolutions.Wpf.DragDrop.IDragInfo)">
+            <summary>
+            Determines whether this instance [can start drag] the specified drag information.
+            With this action it's possible to check if the drag and drop operation is allowed to start
+            e.g. check for a UIElement inside a list view item, that should not start a drag and drop operation
+            </summary>
+            <param name="dragInfo">Object which contains several drag information.</param>
+            <returns>True if the drag and drop operation is allowed.</returns>
+        </member>
         <member name="M:GongSolutions.Wpf.DragDrop.IDragSource.Dropped(GongSolutions.Wpf.DragDrop.IDropInfo)">
             <summary>
             Notifies the drag handler that a drop has occurred.
             </summary>
-            
-            <param name="dropInfo">
-              Information about the drop.
-            </param>
+            <param name="dropInfo">Object which contains several drop information.</param>
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.IDragSource.DragDropOperationFinished(System.Windows.DragDropEffects,GongSolutions.Wpf.DragDrop.IDragInfo)">
             <summary>
             Notifies the drag handler that a drag and drop operation has finished.
             </summary>
             <param name="operationResult">The operation result.</param>
-            <param name="dragInfo">The drag information.</param>
+            <param name="dragInfo">Object which contains several drag information.</param>
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.IDragSource.DragCancelled">
             <summary>
@@ -1241,9 +1056,7 @@
             <summary>
             Notifies that an exception has occurred upon dragging.
             </summary>
-            <param name="exception">
-            The exception that occurrred.
-            </param>
+            <param name="exception">The exception that occurred.</param>
             <returns>
             Boolean indicating whether the exception is handled in the drag handler.
             False will rethrow the exception.
@@ -1253,7 +1066,6 @@
             <summary>
             Gets the drag data.
             </summary>
-            
             <remarks>
             If the drag came from within the framework, this will hold:
             
@@ -1276,9 +1088,8 @@
             <summary>
             Gets or sets the class of drop target to display.
             </summary>
-            
             <remarks>
-            The standard drop target adorner classes are held in the <see cref="T:GongSolutions.Wpf.DragDrop.DropTargetAdorners"/>
+            The standard drop target Adorner classes are held in the <see cref="T:GongSolutions.Wpf.DragDrop.DropTargetAdorners"/>
             class.
             </remarks>
         </member>
@@ -1286,7 +1097,6 @@
             <summary>
             Gets or sets the allowed effects for the drop.
             </summary>
-            
             <remarks>
             This must be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/> by a drop handler in order 
             for a drop to be possible.
@@ -1310,7 +1120,6 @@
             <summary>
             Gets the collection that the target ItemsControl is bound to.
             </summary>
-            
             <remarks>
             If the current drop target is unbound or not an ItemsControl, this will be null.
             </remarks>
@@ -1319,7 +1128,6 @@
             <summary>
             Gets the object that the current drop target is bound to.
             </summary>
-            
             <remarks>
             If the current drop target is unbound or not an ItemsControl, this will be null.
             </remarks>
@@ -1328,7 +1136,6 @@
             <summary>
             Gets the current group target.
             </summary>
-            
             <remarks>
             If the drag is currently over an ItemsControl with groups, describes the group that
             the drag is currently over.
@@ -1343,7 +1150,6 @@
             <summary>
             Gets the item in an ItemsControl that is the current drop target.
             </summary>
-            
             <remarks>
             If the current drop target is unbound or not an ItemsControl, this will be null.
             </remarks>
@@ -1360,12 +1166,12 @@
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDropInfo.DestinationText">
             <summary>
-            Gets and sets the text displayed in the DropDropEffects adorner.
+            Gets and sets the text displayed in the DropDropEffects Adorner.
             </summary>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDropInfo.EffectText">
             <summary>
-            Gets and sets the effect text displayed in the DropDropEffects adorner.
+            Gets and sets the effect text displayed in the DropDropEffects Adorner.
             </summary>
         </member>
         <member name="P:GongSolutions.Wpf.DragDrop.IDropInfo.InsertPosition">
@@ -1400,13 +1206,9 @@
         </member>
         <member name="M:GongSolutions.Wpf.DragDrop.IDropTarget.DragOver(GongSolutions.Wpf.DragDrop.IDropInfo)">
             <summary>
-            Updates the current drag state.
+            Notifies the drop handler about the current drag operation state.
             </summary>
-            
-            <param name="dropInfo">
-              Information about the drag.
-            </param>
-            
+            <param name="dropInfo">Object which contains several drop information.</param>
             <remarks>
             To allow a drop at the current drag position, the <see cref="P:GongSolutions.Wpf.DragDrop.DropInfo.Effects"/> property on 
             <paramref name="dropInfo"/> should be set to a value other than <see cref="F:System.Windows.DragDropEffects.None"/>
@@ -1417,10 +1219,7 @@
             <summary>
             Performs a drop.
             </summary>
-            
-            <param name="dropInfo">
-              Information about the drop.
-            </param>
+            <param name="dropInfo">Object which contains several drop information.</param>
         </member>
         <member name="T:GongSolutions.Wpf.DragDrop.ScrollingMode">
             <summary>
