@@ -8,7 +8,8 @@
         xmlns:Command="http://www.galasoft.ch/mvvmlight"
         xmlns:dd="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1024">
+        Title="MainWindow" Height="600" Width="1024"
+        >
 
     <Window.Resources>
         <local:ConverterStringFiltering x:Key="ConverterStringFiltering" />
@@ -68,14 +69,15 @@ Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ListView Name="EmployeeListView" HorizontalAlignment="Left" Height="160" Margin="0,153,0,0" VerticalAlignment="Top" Width="755" Grid.Row="1" SelectedIndex="{Binding SelectedIndex}" ItemsSource="{Binding FilteredCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  IsSynchronizedWithCurrentItem="True" SelectionMode="Extended" AllowDrop="True" local:ListViewBehaviour.AutoUnselectItem="True"
+        <ListView Name="EmployeeListView" HorizontalAlignment="Left" Height="160" Margin="0,153,0,0" VerticalAlignment="Top" Width="755" Grid.Row="1" SelectedIndex="{Binding SelectedIndex}" ItemsSource="{Binding FilteredCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedEmployee, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  IsSynchronizedWithCurrentItem="True" SelectionMode="Extended" AllowDrop="True"
             dd:DragDrop.IsDragSource="true"
             dd:DragDrop.IsDropTarget="true"
             dd:DragDrop.ShowAlwaysDropTargetAdorner="true"
             dd:DragDrop.UseDefaultDragAdorner="true"
             dd:DragDrop.SelectDroppedItems="True"
             dd:DragDrop.DropHandler="{Binding}"
-            dd:DragDrop.DragDropCopyKeyState ="AltKey" >
+            dd:DragDrop.DragDropCopyKeyState ="AltKey" 
+            dd:DragDrop.UseDefaultEffectDataTemplate ="True">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding EmployeeName}"  Width="150">
@@ -164,7 +166,6 @@ Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)[0
         <TextBox Name ="TextboxEmployeeName" HorizontalAlignment="Left" Height="23" Margin="169,82,0,0" VerticalAlignment="Top" Width="522" >
             <TextBox.Text>
                 <MultiBinding Converter="{StaticResource ConverterStringFiltering}" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" >
-
                     <Binding Path="SelectedEmployee.EmployeeName" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"  />
                     <Binding Path="DynamicSearchEmployeeName"  Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True" />
                 </MultiBinding>
@@ -367,7 +368,8 @@ Text="{Binding ErrorContent}" />
         </ToggleButton>
         <Button Content="Recover All" HorizontalAlignment="Left" Margin="692,27,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding RecoverAllCommand}" Grid.Row="1" />
         <TextBlock HorizontalAlignment="Left" Margin="819,53,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CountOfSelectedEmployees}" VerticalAlignment="Top" Width="141" Height="24" />
-        <Label Content="Count of saelected items" HorizontalAlignment="Left" Margin="819,27,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Count of selected items" HorizontalAlignment="Left" Margin="819,27,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Button Content="Export" HorizontalAlignment="Left" Margin="692,72,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding ExportToCSVFileCommand}" Grid.Row="1" />
+        <Button Content="More Info" HorizontalAlignment="Left" Margin="692,115,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.017,0.456" Command="{Binding OpenMoreInfoCommand}" Grid.Row="1" />
     </Grid>
 </Window>

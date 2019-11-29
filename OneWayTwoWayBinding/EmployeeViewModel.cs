@@ -80,6 +80,21 @@ namespace OneWayTwoWayBinding
             ModeOfExecuting = "Searching / Adding Mode";
         }
 
+        private RelayCommand _openMoreInfoCommand;
+
+        public ICommand OpenMoreInfoCommand
+        {
+            get
+            {
+                if (_openMoreInfoCommand == null)
+                {
+                    _openMoreInfoCommand = new RelayCommand((param) => this.OpenMoreInfo(param),
+                        param => true);
+                }
+                return _openMoreInfoCommand;
+            }
+        }
+
         private RelayCommand _updateCommand;
 
         public ICommand UpdateCommand
@@ -266,6 +281,16 @@ namespace OneWayTwoWayBinding
             }
         }
 
+        public void OpenMoreInfo(object parameter)
+        {
+            //MoreInfoViewModel moreInfoWindowVM = new MoreInfoViewModel();
+            //moreInfoWindowVM.MoreInfoWindowsEmployeeName = SelectedEmployee.EmployeeName;
+
+            MoreInfoWindow moreInfoWindow = new MoreInfoWindow();
+            moreInfoWindow.DataContext = this; //this oznacza obecna klase, w tym przypadku jest to EmployeeViewModel
+            moreInfoWindow.Show();
+        }
+
         string _sortColumn;
         ListSortDirection _sortDirection;
 
@@ -368,6 +393,8 @@ namespace OneWayTwoWayBinding
             //List<Employee> selection = ((IList)parameter).Cast<Employee>().ToList();
             IList selection = (IList)parameter;
 
+            //MessageBox.Show(((Employee)selection[0]).ToString());
+
             if (Keyboard.IsKeyDown(Key.LeftCtrl))
             {
                 if (SelectedEmployee == null)
@@ -423,7 +450,8 @@ namespace OneWayTwoWayBinding
                 {
                     //IndexesOfSelectedEmployees.Add(Employees.IndexOf(SelectedEmployee));
                     //SelectedEmployee.IsSelected = false;
-                    //SelectedEmployee = null;
+                    SelectedEmployee = null;
+                    //FilteredCollection.MoveCurrentTo(null);
                     selection.Clear();
                     CountOfSelectedEmployees = selection.Count; //0
                     IndexesOfSelectedEmployees.Clear();
@@ -461,9 +489,7 @@ namespace OneWayTwoWayBinding
                     }
                     CountOfSelectedEmployees = selection.Count;
                 }
-            }
-
-            
+            } 
         }
         //FilteredCollection.MoveCurrentToFirst();
         //foreach (int item in IndexesOfSelectedEmployees)
@@ -978,7 +1004,12 @@ namespace OneWayTwoWayBinding
         }
         public virtual void Drop(IDropInfo dropInfo)
         {
-                if (dropInfo == null || dropInfo.DragInfo == null)
+            if (FilteredCollection != null)
+            {
+                FilteredCollection.Filter = null;
+            }
+
+            if (dropInfo == null || dropInfo.DragInfo == null)
                 {
                     return;
                 }

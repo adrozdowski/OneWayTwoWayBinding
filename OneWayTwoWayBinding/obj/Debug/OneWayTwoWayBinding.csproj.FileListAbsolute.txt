@@ -57,7 +57,6 @@ C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\D
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.g.resources
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.Properties.Resources.resources
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.GenerateResource.cache
-C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CoreCompileInputs.cache
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.exe
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.pdb
 C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\System.Windows.Interactivity.dll
@@ -93,3 +92,5 @@ D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoW
 D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\bin\Debug\GongSolutions.WPF.DragDrop.xml
 D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\App.baml
 D:\AdrianDrozdowski\OneDrive — X-KOM Sp. z o.o-\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\OneWayTwoWayBinding.csproj.CopyComplete
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MoreInfoWindow.g.cs
+C:\Users\adrian.drozdowski\Desktop\OneWayTwoWayBinding\OneWayTwoWayBinding\obj\Debug\MoreInfoWindow.baml

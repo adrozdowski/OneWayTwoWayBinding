@@ -51,6 +51,7 @@ namespace OneWayTwoWayBinding
         private OrderedSet<int> indexesOfSelectedEmployees;
         private int sountOfSelectedEmployees;
         private bool clickOnSelectedItem;
+       
         public bool ClickOnSelectedItem
         {
             get
